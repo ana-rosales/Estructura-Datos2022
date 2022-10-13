@@ -2,8 +2,6 @@ package fes.aragon.ui.controlador;
 
 import static javafx.scene.control.Alert.AlertType.WARNING;
 
-import java.io.IOException;
-
 import fes.aragon.herramientas.ListaSimple;
 import fes.aragon.herramientas.Pila;
 import javafx.event.ActionEvent;
@@ -130,6 +128,9 @@ public class PostfijaController {
 		txtEvaluar.setText("");
 		txtInfija.setText("");
 		txtPostfija.setText("");
+		salida = "";
+		indice = 0;
+		operandos.borrar();
 	}
 
 	private static boolean precedencia(String elementoSuperior, String simbolo) {
